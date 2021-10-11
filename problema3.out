@@ -1,0 +1,29 @@
+
+**** 03/19/20 09:45:41 *********** Evaluation PSpice (Nov 1999) **************
+
+ R1 2 1 2
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+R2 4 3 2
+R3 2 4 2
+R4 4 5 2
+V1 1 5 12
+V2 3 2 6
+G5 4 5 2 1 1
+.OP
+.PRINT DC I(R1) I(R2) I(R3) I(R4) I(G5)
+.END
+
+ERROR -- PRINT device R1 is undefined
+ERROR -- Node 4 is floating
+ERROR -- Node 3 is floating
+ERROR -- Node 2 is floating
+ERROR -- Node 5 is floating
+ERROR -- Node 1 is floating
